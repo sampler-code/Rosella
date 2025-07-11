@@ -1,0 +1,409 @@
+ @media (max-width: 1079px) {
+  /* Header container: خليها تلتف عشان العناصر تنزل تحت بعض اذا ما في مساحة */
+  .container-fluid {
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    gap: 0.5rem;
+  }
+
+  /* Logo: خليها تتوسع شوي و تبقى عالأعلى */
+  .logo {
+    flex-basis: 100px;
+    margin-left: 20px !important;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Navigation bar: خليها تأخذ عرض كامل وتنزل تحت */
+  .main-nav {
+    flex-basis: 80%;
+    order: 2 !important;
+    margin-bottom: 0.5rem;
+  }
+
+  /* اجعل قائمة الروابط تنظم بشكل مريح في وسط الشاشة */
+  .main-nav .nav {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 8px;
+  }
+
+  /* أيقونات الهيدر: خليها تحت اللوغو وتنزل بعد الناف بار */
+  .header-icons {
+    order: 3 !important;
+    flex-basis: 100%;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* الهيدر: خلي المسافات أصغر شوي */
+  .container-fluid {
+    padding: 0.4rem 1rem !important;
+    gap: 0.3rem !important;
+  }
+
+  /* اللوجو يصغر شوي */
+  .logo {
+    max-width: 120px !important;
+    margin-left: 10px !important;
+  }
+
+  /* روابط التنقل أصغر حجم */
+  .main-nav .nav-link {
+    font-size: 1rem !important;
+    padding: 4px 8px !important;
+  }
+
+  /* الأيقونات تصغر شوي */
+  .header-icons .icon-link {
+    font-size: 1.2rem !important;
+    gap: 15px;
+  }
+
+  /* ===== Hero Section ===== */
+  .hero-content {
+    flex-direction: column !important; /* نص + صورة تحت بعض عمودياً */
+    align-items: center !important;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .hero-text {
+    width: 100% !important;
+    margin: 0 !important;
+    padding-left: 0 !important;
+    text-align: center;
+    margin-top: 40px !important;
+  }
+
+  .hero-title {
+    font-size: 2.5rem !important;
+    margin-left: 0 !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem !important;
+    margin-left: 0 !important;
+    line-height: 1.8 !important;
+  }
+
+  .p2 {
+    margin-left: 0 !important;
+    font-weight: 700 !important;
+  }
+
+  .order-image-link {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    justify-content: center !important;
+  }
+
+  .order-image {
+    width: 180px !important;
+  }
+
+  .hero-image-container {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .hero-image {
+    width: 60% !important;
+    transform: translateX(0) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Header minor tweaks */
+  .logo {
+    max-width: 100px !important;
+    margin-left: 10px !important;
+  }
+
+  .main-nav .nav-link {
+    font-size: 0.9rem !important;
+    margin: 4px 6px !important;
+  }
+
+  .header-icons .icon-link {
+    font-size: 1rem !important;
+  }
+
+  /* Hero Section text أصغر */
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem !important;
+  }
+
+  .order-image {
+    width: 140px !important;
+  }
+
+  .hero-image {
+    width: 80% !important;
+  }
+}
+
+
+/* for feedback*/ 
+
+/* Responsive fix for small screens */
+ 
+@media (max-width: 768px) {
+  .custom-coverflow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cover-img {
+    max-width: 180px !important;
+    height: auto !important;
+  }
+
+  .cover-img.active,
+  .cover-img:hover {
+    width: 220px !important;
+    height: auto !important;
+  }
+}
+/* log in */ 
+@media (max-width: 768px) {
+  .auth-section {
+    height: auto;
+  }
+  .cards-slider {
+    flex-direction: column;
+    height: auto;
+  }
+  .card-slide,
+  .card-slide.secondary {
+    width: 90vw !important;
+    transform: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+    pointer-events: auto !important;
+  }
+  .tab-buttons {
+    position: static;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+}
+/* Responsive */
+@media (max-width: 576px) {
+  .switch-message {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/*shop*/
+ /* Responsive */
+ /* Responsive */
+@media (max-width: 900px) {
+  .dual-card {
+    width: 180px;
+    height: 140px;
+  }
+
+  .dual-card .front-rect {
+    height: 100px;
+    font-size: 1.2rem;
+    margin-top: -25px;
+  }
+
+  .dual-card .background-rect {
+    top: 20px;
+    font-size: 0.9rem;
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .dual-card {
+    width: 150px;
+    height: 120px;
+  }
+
+  .dual-card .front-rect {
+    height: 80px;
+    font-size: 1rem;
+    margin-top: -20px;
+  }
+
+  .dual-card .background-rect {
+    top: 15px;
+    font-size: 0.8rem;
+    padding: 10px 15px;
+  }
+}
+/* products */
+ 
+@media (max-width: 999px) {
+  #productsGrid .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0.5rem;
+  }
+
+  #productsGrid .card img {
+    height: 260px;
+    object-fit: cover;
+  }
+}
+
+/* للموبايل */
+@media (max-width: 768px) {
+  #productsGrid .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+
+  #productsGrid .card img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  #productsGrid .card {
+    text-align: center;
+  }
+
+  #productsGrid input,
+  #productsGrid button {
+    width: auto;
+    margin: 0.25rem;
+  }
+
+  #productsGrid .d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar {
+    top: 150px; /* تأكد انه تحت الهيدر */
+    height: calc(100% - 110px); /* يضبط ارتفاعه */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    top: 100px; /* ازيد شوي */
+    height: calc(100% - 100px);
+  }
+}
+@media (max-width: 992px) {
+  #vasesGrid .col-md-2 {
+    flex: 1 1 160px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  #vasesGrid .col-md-2 {
+    flex: 1 1 140px;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  #vasesGrid .col-md-2 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+/* ميديا كويري لأجهزة أصغر */
+@media (max-width: 768px) {
+  .bouquet-img {
+    height: 180px;
+  }
+  .qty-input {
+    width: 50px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .bouquet-img {
+    height: 160px;
+  }
+  .qty-input {
+    width: 45px;
+    font-size: 0.8rem;
+  }
+}
+/*مناسبات*/
+@media(max-width: 992px){
+  #occasion-gifts img {
+    height: 180px;
+  }
+}
+@media(max-width: 768px){
+  #occasion-gifts img {
+    height: 160px;
+  }
+}
+@media(max-width: 576px){
+  #occasion-gifts img {
+    height: 140px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* col-md-2 = 6 أعمدة */
+  .col-md-2 {
+    flex: 0 0 16.6667%;
+    max-width: 16.6667%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* 4 أعمدة */
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  /* override col-md-2 في هذه الحالة */
+  #wedding-services > .col-md-2,
+  #bride-services > .col-md-2,
+  #birthday-services > .col-md-2,
+  #graduation-services > .col-md-2 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  /* 2 أعمدة */
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  #wedding-services > .col-md-2,
+  #bride-services > .col-md-2,
+  #birthday-services > .col-md-2,
+  #graduation-services > .col-md-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* 1 عمود */
+  .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  #wedding-services > .col-md-2,
+  #bride-services > .col-md-2,
+  #birthday-services > .col-md-2,
+  #graduation-services > .col-md-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
